@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VANTA E7 — Electric Grand Tourer</title>
+  <meta name="description" content="Концепт премиального электрического grand tourer: динамика, архитектура батареи, зарядка, cockpit и интерактивная конфигурация.">
+  <meta name="theme-color" content="#080808">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+
+  <header class="topbar" data-topbar>
+    <a class="brand" href="#hero" aria-label="VANTA — наверх"><span class="brand-mark">V</span><span>VANTA</span></a>
+    <nav class="nav" aria-label="Основная навигация" data-nav>
+      <a href="#design">Design</a><a href="#drive">Drive</a><a href="#energy">Energy</a><a href="#cockpit">Cockpit</a><a href="#configure">Configure</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu><span></span><span></span></button>
+    <button class="sound-btn" type="button" data-sound aria-pressed="false"><span class="pulse-dot"></span> Pulse mode</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-lines" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Electric grand tourer / concept study</p>
+        <h1 id="hero-title"><span>VANTA</span><strong>E7</strong></h1>
+        <p class="hero-lead">Тишина электропривода. Геометрия скорости. Архитектура дальнего маршрута.</p>
+      </div>
+      <div class="hero-vehicle" aria-hidden="true"><img src="assets/img/vehicle-side.svg" alt=""></div>
+      <div class="hero-specs" aria-label="Ключевые демонстрационные характеристики">
+        <div><span>0–100</span><strong>3.4 s</strong></div>
+        <div><span>Concept range</span><strong>720 km</strong></div>
+        <div><span>Peak system</span><strong>520 kW</strong></div>
+      </div>
+      <button class="hero-scroll" type="button" data-scroll="#design">Explore <span>↓</span></button>
+    </section>
+
+    <section class="chapter chapter-light" id="design">
+      <div class="chapter-index"><span>01</span><small>FORM</small></div>
+      <div class="design-layout">
+        <div class="design-copy reveal">
+          <p class="kicker">Design philosophy</p>
+          <h2>Не кузов вокруг батареи.<br>Архитектура движения.</h2>
+          <p>VANTA E7 — демонстрационный концепт, построенный вокруг низкого центра тяжести, длинной колёсной базы и цельного воздушного канала от фронта до диффузора. Вместо декоративной агрессии — точные поверхности и работа с потоком.</p>
+        </div>
+        <div class="shape-stage reveal" data-shape-stage>
+          <div class="shape-copy"><span data-shape-title>Long arc</span><small data-shape-text>Единая дуга крыши собирает силуэт в одну непрерывную линию.</small></div>
+          <img src="assets/img/vehicle-top.svg" alt="Схематичный вид VANTA E7 сверху">
+          <button class="hotspot h1 is-active" type="button" data-shape="0" aria-label="Показать Long arc"></button>
+          <button class="hotspot h2" type="button" data-shape="1" aria-label="Показать Aero tunnel"></button>
+          <button class="hotspot h3" type="button" data-shape="2" aria-label="Показать Light blade"></button>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true"><div>LOW DRAG • LONG WHEELBASE • ACTIVE AERO • FLUSH SURFACES • LOW DRAG • LONG WHEELBASE • ACTIVE AERO • FLUSH SURFACES •</div></div>
+    </section>
+
+    <section class="drive" id="drive">
+      <div class="drive-head reveal">
+        <div><p class="kicker">02 / DRIVE</p><h2>Три характера.<br>Одна платформа.</h2></div>
+        <p>Переключение режима меняет не только отклик педали, но и распределение тяги, рекуперацию, высоту кузова и визуальную логику интерфейса.</p>
+      </div>
+      <div class="drive-console reveal">
+        <div class="mode-rail" role="tablist" aria-label="Режим движения">
+          <button role="tab" aria-selected="true" data-mode="tour">TOUR</button>
+          <button role="tab" aria-selected="false" data-mode="pulse">PULSE</button>
+          <button role="tab" aria-selected="false" data-mode="track">TRACK</button>
+        </div>
+        <div class="telemetry">
+          <div class="telemetry-ring" data-ring><span data-power>46%</span><small>power reserve</small></div>
+          <div class="telemetry-bars">
+            <div><span>Torque split</span><b><i data-bar="torque"></i></b><strong data-torque>45 / 55</strong></div>
+            <div><span>Regen</span><b><i data-bar="regen"></i></b><strong data-regen>Medium</strong></div>
+            <div><span>Ride height</span><b><i data-bar="ride"></i></b><strong data-ride>+8 mm</strong></div>
+          </div>
+        </div>
+        <div class="drive-visual"><img src="assets/img/vehicle-side.svg" alt="Боковой силуэт VANTA E7"><div class="velocity-lines" aria-hidden="true"></div></div>
+        <div class="mode-note"><span data-mode-name>TOUR</span><p data-mode-copy>Мягкий отклик, расширенная рекуперация и спокойная настройка шасси для длинного маршрута.</p></div>
+      </div>
+    </section>
+
+    <section class="energy" id="energy">
+      <div class="energy-grid">
+        <article class="energy-intro reveal"><p class="kicker">03 / ENERGY</p><h2>Маршрут начинается не с процента заряда.</h2><p>Он начинается с архитектуры батареи, теплового режима и понимания того, как автомобиль будет заряжаться в реальной поездке.</p></article>
+        <div class="battery-cutaway reveal" aria-label="Схема батареи"><div class="battery-shell"><span class="cell c1"></span><span class="cell c2"></span><span class="cell c3"></span><span class="cell c4"></span><span class="cell c5"></span><span class="cell c6"></span><span class="cooling"></span></div><p>800 V architecture / dual cooling loop / structural pack concept</p></div>
+        <article class="charge-lab reveal">
+          <div class="charge-head"><span>ROUTE LAB</span><strong data-route-km>420 km</strong></div>
+          <label>Длина маршрута <input type="range" min="120" max="720" value="420" step="20" data-route></label>
+          <label>Температура <input type="range" min="-20" max="35" value="18" step="1" data-temp></label>
+          <div class="route-result"><div><small>Estimated arrival</small><strong data-arrival>24%</strong></div><div><small>Recommended stop</small><strong data-stop>18 min</strong></div></div>
+          <p class="fineprint">Демонстрационный калькулятор интерфейса; значения не являются реальными характеристиками серийного автомобиля.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cockpit" id="cockpit">
+      <div class="cockpit-image reveal"><img src="assets/img/cockpit.svg" alt="Схематичная визуализация cockpit VANTA E7"></div>
+      <div class="cockpit-copy reveal"><p class="kicker">04 / COCKPIT</p><h2>Интерфейс, который исчезает, когда он не нужен.</h2><p>Ключевая информация живёт на одной линии зрения. Остальное — контекстно: навигация в повороте, энергия на маршруте, параметры шасси в динамичном режиме.</p><ul><li><span>01</span> Horizon display без «телевизора» на торпедо</li><li><span>02</span> Haptic controls для основных функций</li><li><span>03</span> Night palette с минимальной яркостью</li><li><span>04</span> Physical override для климата и света</li></ul></div>
+    </section>
+
+    <section class="aero" aria-labelledby="aero-title">
+      <div class="aero-head reveal"><p class="kicker">05 / AERO</p><h2 id="aero-title">Воздух — часть кузова.</h2></div>
+      <div class="aero-map reveal">
+        <div class="aero-car"><img src="assets/img/vehicle-side.svg" alt="Силуэт автомобиля для аэродинамической схемы"></div>
+        <div class="flow f1"></div><div class="flow f2"></div><div class="flow f3"></div><div class="flow f4"></div>
+        <div class="aero-label l1"><b>01</b><span>Air curtain</span></div><div class="aero-label l2"><b>02</b><span>Flat floor</span></div><div class="aero-label l3"><b>03</b><span>Active diffuser</span></div>
+      </div>
+    </section>
+
+    <section class="configure" id="configure">
+      <div class="config-head reveal"><p class="kicker">06 / CONFIGURE</p><h2>Соберите свой сценарий.</h2><p>Не «выберите цвет». Сначала выберите характер автомобиля — затем детали подстроятся под него.</p></div>
+      <div class="configurator reveal">
+        <div class="config-stage" data-config-stage>
+          <img src="assets/img/vehicle-side.svg" alt="VANTA E7 в выбранной конфигурации">
+          <div class="config-glow"></div>
+          <div class="config-name"><small>Current specification</small><strong data-config-name>Obsidian / Grand Tour</strong></div>
+        </div>
+        <div class="config-controls">
+          <fieldset><legend>Finish</legend><div class="swatches"><button type="button" class="swatch is-active" aria-label="Obsidian" data-finish="Obsidian" data-tone="#0f1112" style="--sw:#111"></button><button type="button" class="swatch" aria-label="Ion Silver" data-finish="Ion Silver" data-tone="#6d7277" style="--sw:#767b80"></button><button type="button" class="swatch" aria-label="Volt Acid" data-finish="Volt Acid" data-tone="#9ebd19" style="--sw:#d8ff35"></button></div></fieldset>
+          <fieldset><legend>Character</legend><div class="choice-row"><button type="button" class="choice is-active" data-character="Grand Tour">Grand Tour</button><button type="button" class="choice" data-character="Performance">Performance</button><button type="button" class="choice" data-character="Night Line">Night Line</button></div></fieldset>
+          <fieldset><legend>Wheel</legend><div class="choice-row"><button type="button" class="choice is-active" data-wheel="21\" Aero">21" Aero</button><button type="button" class="choice" data-wheel="22\" Blade">22" Blade</button></div></fieldset>
+          <div class="config-summary"><div><small>Concept range</small><strong data-summary-range>720 km</strong></div><div><small>System output</small><strong data-summary-power>520 kW</strong></div><div><small>0–100</small><strong data-summary-accel>3.4 s</strong></div></div>
+          <button class="config-cta" type="button" data-brief>Open build brief <span>↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="specwall" aria-labelledby="spec-title">
+      <div class="specwall-title reveal"><p class="kicker">07 / SPEC WALL</p><h2 id="spec-title">Инженерия без декоративного шума.</h2></div>
+      <div class="spec-list reveal">
+        <div><span>Platform</span><strong>Dedicated EV / AWD concept</strong></div><div><span>Voltage</span><strong>800 V architecture</strong></div><div><span>Suspension</span><strong>Dual-chamber adaptive air</strong></div><div><span>Steering</span><strong>Rear-axle steering concept</strong></div><div><span>Thermal</span><strong>Dual-loop battery conditioning</strong></div><div><span>Charging</span><strong>High-power DC fast charge concept</strong></div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="closing-top">VANTA / E7 / CONCEPT 07</p>
+      <h2>Drive the silence.<br><em>Keep the pulse.</em></h2>
+      <button type="button" data-brief>Build brief</button>
+      <footer><span>© <span data-year>XXI</span> VANTA Concept</span><span>Portfolio concept / no commercial vehicle claims</span></footer>
+    </section>
+  </main>
+
+  <dialog class="brief" data-dialog>
+    <button class="dialog-close" type="button" data-dialog-close aria-label="Закрыть">×</button>
+    <p class="kicker">BUILD BRIEF</p><h2>VANTA E7</h2><div class="brief-grid"><div><span>Finish</span><strong data-brief-finish>Obsidian</strong></div><div><span>Character</span><strong data-brief-character>Grand Tour</strong></div><div><span>Wheel</span><strong data-brief-wheel>21&quot; Aero</strong></div></div><p>Это демонстрационный конфигуратор для портфолио. Данные не отправляются и не сохраняются.</p><button type="button" class="dialog-ok" data-dialog-close>Close brief</button>
+  </dialog>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
