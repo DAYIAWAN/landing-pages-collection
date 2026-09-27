@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#08110f">
+  <meta name="description" content="Nexaura AI — AI-операционная система для автоматизации повторяющихся задач, работы с корпоративными знаниями и контроля бизнес-процессов.">
+  <meta property="og:title" content="Nexaura AI — AI-операционная система для команды">
+  <meta property="og:description" content="Автоматизация процессов, корпоративные знания, аналитика и guardrails в одном AI-workspace.">
+  <meta property="og:type" content="website">
+  <title>Nexaura AI — AI-операционная система для команды</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К основному содержанию</a>
+
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Nexaura AI — на главную">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="brand-word">nexaura<span>.ai</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#platform">Платформа</a>
+        <a href="#lab">AI Lab</a>
+        <a href="#security">Безопасность</a>
+        <a href="#plans">Тарифы</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn--ghost btn--small" type="button" data-open-dialog>Запросить пилот</button>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu" data-menu-toggle>
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" data-mobile-menu hidden>
+      <nav aria-label="Мобильная навигация">
+        <a href="#platform">Платформа</a>
+        <a href="#lab">AI Lab</a>
+        <a href="#security">Безопасность</a>
+        <a href="#plans">Тарифы</a>
+        <button class="btn btn--primary" type="button" data-open-dialog>Запросить пилот</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse-dot"></span> AI workflow operating system</div>
+          <h1>Превратите повторяющуюся работу в <span>управляемые AI-процессы</span>.</h1>
+          <p class="hero-lead">Nexaura объединяет корпоративные знания, автоматизацию задач, проверяемые AI-агенты и операционную аналитику в одном рабочем контуре.</p>
+
+          <div class="hero-actions">
+            <button class="btn btn--primary" type="button" data-open-dialog>
+              Запустить пилот
+              <span aria-hidden="true">↗</span>
+            </button>
+            <a class="btn btn--secondary" href="#lab">Посмотреть AI Lab</a>
+          </div>
+
+          <div class="hero-proof" aria-label="Ключевые возможности">
+            <div><strong>24/7</strong><span>фоновые сценарии</span></div>
+            <div><strong>1 workspace</strong><span>знания + процессы</span></div>
+            <div><strong>Human-in-loop</strong><span>контроль решений</span></div>
+          </div>
+        </div>
+
+        <div class="hero-product" aria-label="Превью интерфейса Nexaura">
+          <div class="product-shell">
+            <div class="shell-topbar">
+              <div class="shell-brand"><span></span> Operations cockpit</div>
+              <div class="shell-status">live</div>
+            </div>
+
+            <div class="shell-grid">
+              <aside class="shell-sidebar" aria-hidden="true">
+                <span class="side-pill is-active"></span>
+                <span class="side-pill"></span>
+                <span class="side-pill"></span>
+                <span class="side-pill"></span>
+                <span class="side-pill"></span>
+              </aside>
+
+              <div class="shell-main">
+                <div class="shell-headline">
+                  <div>
+                    <small>Сегодня</small>
+                    <h2>AI Operations</h2>
+                  </div>
+                  <span class="health"><i></i> stable</span>
+                </div>
+
+                <div class="metric-row">
+                  <article class="metric-card">
+                    <span>Автоматизировано</span>
+                    <strong>68%</strong>
+                    <small>+12% за 30 дней</small>
+                  </article>
+                  <article class="metric-card">
+                    <span>На проверке</span>
+                    <strong>14</strong>
+                    <small>3 требуют внимания</small>
+                  </article>
+                  <article class="metric-card metric-card--graph">
+                    <span>Нагрузка</span>
+                    <div class="sparkline" aria-hidden="true">
+                      <i style="height:35%"></i><i style="height:52%"></i><i style="height:44%"></i><i style="height:70%"></i><i style="height:58%"></i><i style="height:82%"></i><i style="height:66%"></i><i style="height:92%"></i>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="workflow-panel">
+                  <div class="workflow-title">
+                    <span>Сценарий: входящие обращения</span>
+                    <small>running</small>
+                  </div>
+                  <div class="flow-line">
+                    <div class="flow-node"><b>01</b><span>Классификация</span></div>
+                    <i aria-hidden="true"></i>
+                    <div class="flow-node"><b>02</b><span>Контекст из CRM</span></div>
+                    <i aria-hidden="true"></i>
+                    <div class="flow-node flow-node--accent"><b>03</b><span>AI-ответ</span></div>
+                    <i aria-hidden="true"></i>
+                    <div class="flow-node"><b>04</b><span>Проверка</span></div>
+                  </div>
+                </div>
+
+                <div class="activity-panel">
+                  <div class="activity-copy">
+                    <span class="activity-icon">✦</span>
+                    <div><strong>Agent resolved 27 tasks</strong><small>Среднее время — 42 сек.</small></div>
+                  </div>
+                  <button type="button" class="micro-button" tabindex="-1">Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-note floating-note--one" aria-hidden="true">
+            <span>Knowledge sync</span><strong>1 842</strong><small>документа в контексте</small>
+          </div>
+          <div class="floating-note floating-note--two" aria-hidden="true">
+            <span class="checkmark">✓</span><div><strong>Guardrail passed</strong><small>Ответ проверен политикой</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container capability-strip" aria-label="Области автоматизации">
+        <span>Документы</span><i></i><span>Поддержка</span><i></i><span>Продажи</span><i></i><span>Отчётность</span><i></i><span>База знаний</span><i></i><span>Операции</span>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="platform">
+      <div class="container">
+        <div class="section-heading heading-split">
+          <div>
+            <span class="kicker">01 / Платформа</span>
+            <h2>Не ещё один чат. <br>Рабочий слой поверх процессов.</h2>
+          </div>
+          <p>Nexaura проектируется вокруг задач, которые уже существуют в компании: документы, обращения, проверки, согласования и внутренние знания.</p>
+        </div>
+
+        <div class="platform-layout">
+          <div class="platform-rail" role="tablist" aria-label="Модули платформы">
+            <button class="platform-tab is-active" type="button" role="tab" aria-selected="true" data-platform-tab="agents">
+              <span>01</span><strong>AI Agents</strong><small>Сценарии и действия</small>
+            </button>
+            <button class="platform-tab" type="button" role="tab" aria-selected="false" data-platform-tab="knowledge">
+              <span>02</span><strong>Knowledge</strong><small>Контекст и документы</small>
+            </button>
+            <button class="platform-tab" type="button" role="tab" aria-selected="false" data-platform-tab="guardrails">
+              <span>03</span><strong>Guardrails</strong><small>Политики и контроль</small>
+            </button>
+            <button class="platform-tab" type="button" role="tab" aria-selected="false" data-platform-tab="analytics">
+              <span>04</span><strong>Analytics</strong><small>Эффект и нагрузка</small>
+            </button>
+          </div>
+
+          <div class="platform-stage">
+            <article class="platform-panel is-active" data-platform-panel="agents">
+              <div class="panel-copy">
+                <span class="panel-label">AI Agents</span>
+                <h3>Агенты знают, что делать дальше — и когда нужно остановиться.</h3>
+                <p>Собирайте workflow из триггеров, AI-шагов, бизнес-правил и обязательных точек ручной проверки.</p>
+                <ul class="feature-list">
+                  <li><span>↳</span> ветвление по контексту и статусу</li>
+                  <li><span>↳</span> human approval перед критическим действием</li>
+                  <li><span>↳</span> журнал действий по каждому запуску</li>
+                </ul>
+              </div>
+              <div class="agent-canvas" aria-hidden="true">
+                <div class="canvas-grid"></div>
+                <div class="agent-node node-a"><span>Trigger</span><b>New request</b></div>
+                <div class="agent-node node-b"><span>Context</span><b>CRM + Docs</b></div>
+                <div class="agent-node node-c node-c--accent"><span>Reasoning</span><b>AI Agent</b></div>
+                <div class="agent-node node-d"><span>Control</span><b>Manager review</b></div>
+                <svg viewBox="0 0 560 300" preserveAspectRatio="none"><path d="M126 78 C210 78 183 153 264 153"/><path d="M126 222 C210 222 183 153 264 153"/><path d="M360 153 C425 153 420 153 465 153"/></svg>
+              </div>
+            </article>
+
+            <article class="platform-panel" data-platform-panel="knowledge" hidden>
+              <div class="panel-copy">
+                <span class="panel-label">Knowledge</span>
+                <h3>Ответы опираются на рабочий контекст, а не на догадки.</h3>
+                <p>Подключайте регламенты, базы знаний и документы. Источник можно увидеть прямо рядом с выводом агента.</p>
+                <ul class="feature-list">
+                  <li><span>↳</span> семантический поиск по внутренним данным</li>
+                  <li><span>↳</span> разграничение доступа по командам</li>
+                  <li><span>↳</span> источники и ссылки в каждом ответе</li>
+                </ul>
+              </div>
+              <div class="knowledge-visual" aria-hidden="true">
+                <div class="doc-stack"><span></span><span></span><span></span></div>
+                <div class="search-orbit"><i></i><b>context</b><small>verified</small></div>
+                <div class="citation-card"><span>01</span><p>Регламент обработки обращений</p></div>
+                <div class="citation-card citation-card--two"><span>02</span><p>Политика SLA для B2B-клиентов</p></div>
+              </div>
+            </article>
+
+            <article class="platform-panel" data-platform-panel="guardrails" hidden>
+              <div class="panel-copy">
+                <span class="panel-label">Guardrails</span>
+                <h3>Свобода автоматизации — внутри понятных границ.</h3>
+                <p>Настраивайте уровни риска, запрещённые действия и обязательные согласования без переписывания сценария.</p>
+                <ul class="feature-list">
+                  <li><span>↳</span> политики доступа и риск-профили</li>
+                  <li><span>↳</span> стоп-условия до выполнения действия</li>
+                  <li><span>↳</span> audit trail для разбора решений</li>
+                </ul>
+              </div>
+              <div class="shield-visual" aria-hidden="true">
+                <div class="shield-core">✓</div>
+                <div class="shield-ring ring-a"></div>
+                <div class="shield-ring ring-b"></div>
+                <span class="rule-chip chip-a">PII check</span>
+                <span class="rule-chip chip-b">Approval</span>
+                <span class="rule-chip chip-c">Scope</span>
+              </div>
+            </article>
+
+            <article class="platform-panel" data-platform-panel="analytics" hidden>
+              <div class="panel-copy">
+                <span class="panel-label">Analytics</span>
+                <h3>Видно не только, что автоматизировано, но и где автоматизация полезна.</h3>
+                <p>Сравнивайте ручной и автоматизированный контур, ищите узкие места и отслеживайте сценарии, которые требуют внимания.</p>
+                <ul class="feature-list">
+                  <li><span>↳</span> нагрузка по процессам и командам</li>
+                  <li><span>↳</span> причины ручного вмешательства</li>
+                  <li><span>↳</span> история качества и стабильности</li>
+                </ul>
+              </div>
+              <div class="analytics-visual" aria-hidden="true">
+                <div class="bars"><i style="height:32%"></i><i style="height:48%"></i><i style="height:39%"></i><i style="height:61%"></i><i style="height:72%"></i><i style="height:84%"></i><i style="height:78%"></i></div>
+                <div class="analytics-card"><span>Human review rate</span><b>8.4%</b><small>↓ 3.1%</small></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lab" id="lab">
+      <div class="container lab-grid">
+        <div class="lab-copy">
+          <span class="kicker">02 / AI Lab</span>
+          <h2>Проверьте, как агент меняет рабочий сценарий.</h2>
+          <p>Выберите тип задачи и уровень автономности. Демо покажет, какие шаги система предложит перед выполнением.</p>
+
+          <div class="lab-controls">
+            <fieldset>
+              <legend>Задача</legend>
+              <div class="segmented" data-task-group>
+                <button type="button" class="is-active" data-task="support">Поддержка</button>
+                <button type="button" data-task="docs">Документы</button>
+                <button type="button" data-task="sales">Продажи</button>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Автономность</legend>
+              <label class="range-wrap">
+                <span>Assist</span>
+                <input type="range" min="1" max="3" value="2" step="1" data-autonomy aria-label="Уровень автономности">
+                <span>Autopilot</span>
+              </label>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="lab-console" data-lab-console>
+          <div class="console-top">
+            <span><i></i> simulation / safe mode</span>
+            <small data-lab-mode>guided</small>
+          </div>
+          <div class="console-request">
+            <span>Входящая задача</span>
+            <p data-lab-request>Клиент сообщает, что не видит закрывающие документы по последнему заказу.</p>
+          </div>
+          <div class="console-chain" data-lab-chain>
+            <div><b>01</b><span>Определить тип обращения</span><em>0.7s</em></div>
+            <div><b>02</b><span>Проверить договор и заказ</span><em>1.2s</em></div>
+            <div><b>03</b><span>Найти документы в хранилище</span><em>0.9s</em></div>
+            <div class="is-highlight"><b>04</b><span>Подготовить ответ на согласование</span><em>2.4s</em></div>
+          </div>
+          <div class="console-result">
+            <div><span>Следующий шаг</span><strong data-lab-result>Передать подготовленный ответ сотруднику для проверки.</strong></div>
+            <span class="risk-badge" data-risk>risk: low</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section integrations-section">
+      <div class="container">
+        <div class="section-heading heading-split">
+          <div>
+            <span class="kicker">03 / Интеграции</span>
+            <h2>Подключается к рабочему контуру, а не заменяет его.</h2>
+          </div>
+          <p>Коннекторы связывают агента с данными и действиями. Визуально — одна система, технически — контролируемые точки доступа.</p>
+        </div>
+
+        <div class="integration-board" aria-label="Пример интеграционной схемы">
+          <div class="integration-core"><span class="brand-mark brand-mark--small"><span></span><span></span><span></span></span><b>Nexaura</b><small>orchestration layer</small></div>
+          <div class="integration-item item-1"><i>CRM</i><span>Клиенты</span></div>
+          <div class="integration-item item-2"><i>ERP</i><span>Операции</span></div>
+          <div class="integration-item item-3"><i>DOC</i><span>Документы</span></div>
+          <div class="integration-item item-4"><i>MAIL</i><span>Почта</span></div>
+          <div class="integration-item item-5"><i>BI</i><span>Аналитика</span></div>
+          <div class="integration-item item-6"><i>CHAT</i><span>Команда</span></div>
+          <svg class="integration-lines" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M600 260 C450 260 390 125 230 112"/><path d="M600 260 C730 245 785 115 966 115"/><path d="M600 260 C445 274 382 409 210 407"/><path d="M600 260 C760 278 810 415 990 410"/><path d="M600 260 C486 192 385 245 300 250"/><path d="M600 260 C720 188 820 245 904 248"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="security">
+      <div class="container security-grid">
+        <div class="security-copy">
+          <span class="kicker kicker--light">04 / Control layer</span>
+          <h2>AI должен быть быстрым. Контроль — ещё быстрее.</h2>
+          <p>Каждое действие агента проходит через уровень политик: доступ, риск, обязательное подтверждение и журналирование.</p>
+          <div class="security-points">
+            <div><span>01</span><p><strong>Role-based scope</strong><small>Агент видит только разрешённые источники и действия.</small></p></div>
+            <div><span>02</span><p><strong>Approval gates</strong><small>Критические шаги требуют подтверждения сотрудника.</small></p></div>
+            <div><span>03</span><p><strong>Full trace</strong><small>Контекст, решение и действие остаются в журнале.</small></p></div>
+          </div>
+        </div>
+
+        <div class="security-matrix" aria-label="Матрица уровней контроля">
+          <div class="matrix-head"><span>POLICY ENGINE</span><small>live</small></div>
+          <div class="matrix-row"><span>Read knowledge</span><b class="status-ok">allow</b><i>auto</i></div>
+          <div class="matrix-row"><span>Draft response</span><b class="status-ok">allow</b><i>auto</i></div>
+          <div class="matrix-row"><span>Update CRM</span><b class="status-warn">review</b><i>human</i></div>
+          <div class="matrix-row"><span>Send contract</span><b class="status-warn">review</b><i>human</i></div>
+          <div class="matrix-row"><span>Delete record</span><b class="status-stop">deny</b><i>blocked</i></div>
+          <div class="matrix-log"><span>Last policy check</span><strong>passed / 14:32:08</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section plans" id="plans">
+      <div class="container">
+        <div class="section-heading heading-split heading-split--center">
+          <div>
+            <span class="kicker">05 / Тарифы</span>
+            <h2>Начните с одного процесса. Масштабируйте после доказанного эффекта.</h2>
+          </div>
+          <div class="billing-switch" role="group" aria-label="Период оплаты">
+            <button type="button" class="is-active" data-billing="monthly">Помесячно</button>
+            <button type="button" data-billing="annual">За год <span>−20%</span></button>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <div class="price-head"><span>START</span><h3>Pilot</h3><p>Для проверки одного процесса и внутренней команды.</p></div>
+            <div class="price"><strong data-price="7900">7 900 ₽</strong><span>/ мес.</span></div>
+            <ul><li>1 AI-сценарий</li><li>до 3 источников знаний</li><li>базовые guardrails</li><li>журнал запусков</li></ul>
+            <button class="btn btn--secondary btn--wide" type="button" data-open-dialog>Запустить пилот</button>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <div class="recommended">Для рабочих команд</div>
+            <div class="price-head"><span>GROW</span><h3>Team</h3><p>Для нескольких процессов, отделов и согласований.</p></div>
+            <div class="price"><strong data-price="19900">19 900 ₽</strong><span>/ мес.</span></div>
+            <ul><li>до 8 AI-сценариев</li><li>расширенный knowledge layer</li><li>human approval gates</li><li>аналитика по процессам</li></ul>
+            <button class="btn btn--primary btn--wide" type="button" data-open-dialog>Выбрать Team</button>
+          </article>
+
+          <article class="price-card">
+            <div class="price-head"><span>SCALE</span><h3>Company</h3><p>Для нескольких команд, систем и собственных политик.</p></div>
+            <div class="price price--custom"><strong>Индивидуально</strong><span>под контур</span></div>
+            <ul><li>неограниченные процессы</li><li>SSO и расширенные роли</li><li>кастомные политики</li><li>приоритетное сопровождение</li></ul>
+            <button class="btn btn--secondary btn--wide" type="button" data-open-dialog>Обсудить контур</button>
+          </article>
+        </div>
+        <p class="pricing-note">Цены и конфигурации на этой демонстрационной странице используются как пример продуктовой тарифной логики.</p>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container faq-layout">
+        <div class="faq-intro">
+          <span class="kicker">06 / FAQ</span>
+          <h2>Вопросы до пилота.</h2>
+          <p>Пилот имеет смысл начинать с процесса, где есть повторяемость, понятный вход и измеримый ручной труд.</p>
+          <button class="text-link" type="button" data-open-dialog>Подобрать процесс для пилота <span>↗</span></button>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>Нужно ли менять текущие CRM и внутренние системы?<span>+</span></summary>
+            <p>Нет. Концепция Nexaura — orchestration layer поверх существующего контура. Интеграции подключают данные и действия точечно.</p>
+          </details>
+          <details>
+            <summary>Можно ли оставить обязательную ручную проверку?<span>+</span></summary>
+            <p>Да. Для критических действий можно задать approval gate: агент готовит следующий шаг, а выполнение происходит только после подтверждения сотрудника.</p>
+          </details>
+          <details>
+            <summary>Что лучше автоматизировать первым?<span>+</span></summary>
+            <p>Повторяющийся процесс с ясными правилами: классификация входящих обращений, подготовка типовых документов, сводка отчётов или работа с внутренней базой знаний.</p>
+          </details>
+          <details>
+            <summary>Что происходит, если агент не уверен?<span>+</span></summary>
+            <p>Сценарий можно настроить так, чтобы при недостаточной уверенности задача автоматически переходила сотруднику вместе с собранным контекстом.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-card">
+        <div class="cta-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="cta-copy">
+          <span class="kicker kicker--light">Pilot mode</span>
+          <h2>Выберите один процесс. <br>Посмотрите, что AI может снять с команды.</h2>
+          <p>Интерактивный pilot-flow покажет рекомендуемую схему автоматизации без отправки персональных данных.</p>
+        </div>
+        <button class="btn btn--light" type="button" data-open-dialog>Собрать пилотный сценарий <span>↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-word">nexaura<span>.ai</span></span></a>
+        <p>AI workflow operating system.<br>Демонстрационный SaaS-концепт для портфолио.</p>
+      </div>
+      <div class="footer-links"><strong>Продукт</strong><a href="#platform">Платформа</a><a href="#lab">AI Lab</a><a href="#security">Контроль</a></div>
+      <div class="footer-links"><strong>Навигация</strong><a href="#plans">Тарифы</a><button type="button" data-open-dialog>Пилот</button><a href="#top">Наверх ↑</a></div>
+      <div class="footer-meta"><span>© <span data-year>XXI</span> Nexaura AI</span><small>Все интерфейсы и данные на странице являются демонстрационными.</small></div>
+    </div>
+  </footer>
+
+  <dialog class="pilot-dialog" data-dialog aria-labelledby="pilotTitle">
+    <div class="dialog-shell">
+      <button class="dialog-close" type="button" data-close-dialog aria-label="Закрыть">×</button>
+      <div class="dialog-head">
+        <span class="kicker">Pilot builder</span>
+        <h2 id="pilotTitle">Соберите сценарий первого AI-процесса.</h2>
+        <p>Это локальная демонстрация: данные никуда не отправляются.</p>
+      </div>
+      <div class="dialog-grid">
+        <label>Процесс
+          <select data-pilot-process>
+            <option value="support">Входящие обращения</option>
+            <option value="docs">Документы и согласование</option>
+            <option value="reports">Регулярная отчётность</option>
+            <option value="knowledge">Внутренняя база знаний</option>
+          </select>
+        </label>
+        <label>Контроль
+          <select data-pilot-control>
+            <option value="review">Проверка перед действием</option>
+            <option value="mixed">Только критические шаги</option>
+            <option value="auto">Максимум автоматизации</option>
+          </select>
+        </label>
+      </div>
+      <div class="pilot-preview" data-pilot-preview>
+        <div><span>01</span><p><strong>Получить входные данные</strong><small>Система фиксирует задачу и контекст.</small></p></div>
+        <div><span>02</span><p><strong>Собрать данные из разрешённых источников</strong><small>Только доступный пользователю контур.</small></p></div>
+        <div><span>03</span><p><strong>Подготовить решение</strong><small>AI формирует следующий шаг.</small></p></div>
+        <div><span>04</span><p><strong>Передать сотруднику на проверку</strong><small>Действие выполняется после подтверждения.</small></p></div>
+      </div>
+      <div class="dialog-footer">
+        <span>Демо-режим • без отправки данных</span>
+        <button class="btn btn--primary" type="button" data-regenerate>Пересобрать сценарий</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
