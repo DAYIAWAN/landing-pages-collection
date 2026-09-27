@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KERN — финансовый контроль для сложных операций</title>
+  <meta name="description" content="KERN — концепт B2B fintech-платформы для multi-entity treasury, платежных политик, контроля рисков и прозрачной финансовой операционной модели.">
+  <meta name="theme-color" content="#f2efe8">
+  <meta property="og:title" content="KERN — Financial Control Infrastructure">
+  <meta property="og:description" content="Cash visibility, payment policies, approvals, risk and audit trail — в едином финансовом контуре.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+
+  <header class="site-header" data-header>
+    <div class="page-wrap header-row">
+      <a class="brand" href="#top" aria-label="KERN — на главную">
+        <span class="brand-word">KERN</span>
+        <span class="brand-tag">financial control infrastructure</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#architecture">Архитектура</a>
+        <a href="#controls">Контроль</a>
+        <a href="#risk">Risk room</a>
+        <a href="#compare">Контуры</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="plain-action desktop-only" type="button" data-open-brief>Открыть finance brief</button>
+        <a class="header-cta" href="#contact">Собрать контур</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Открыть меню" data-menu-toggle>
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-panel" data-mobile-menu hidden>
+      <nav aria-label="Мобильная навигация">
+        <a href="#architecture">Архитектура</a>
+        <a href="#controls">Контроль</a>
+        <a href="#risk">Risk room</a>
+        <a href="#compare">Контуры</a>
+        <button type="button" data-open-brief>Finance brief</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="page-wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="section-label"><span>FINANCE OPERATING SYSTEM</span><b>01</b></p>
+          <h1>Финансовый контроль, который работает <em>до</em> платежа.</h1>
+          <p class="hero-lead">KERN собирает счета, денежные потоки, approval-политики и риск-сигналы в единую операционную модель. Не очередной банковский кабинет — слой управления поверх банков, ERP и процессов команды.</p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#architecture"><span>Посмотреть архитектуру</span><i>↘</i></a>
+            <button class="secondary-link" type="button" data-open-brief>Finance brief <span>04 min</span></button>
+          </div>
+        </div>
+
+        <div class="hero-ledger reveal" data-delay="100" aria-label="Сводка финансового контура">
+          <div class="ledger-head">
+            <span>KERN / CONTROL BOARD</span>
+            <span>09:42 · UTC+3</span>
+          </div>
+          <div class="ledger-total">
+            <small>LIQUIDITY VIEW</small>
+            <strong>₽ 24.8M</strong>
+            <span class="trend positive">+6.2% / 30d</span>
+          </div>
+          <div class="ledger-lines">
+            <div><span>Operating</span><b>₽ 12.4M</b><i style="--w:78%"></i></div>
+            <div><span>Reserve</span><b>₽ 7.1M</b><i style="--w:46%"></i></div>
+            <div><span>Settlement</span><b>₽ 5.3M</b><i style="--w:34%"></i></div>
+          </div>
+          <div class="ledger-footer">
+            <div><span>APPROVAL QUEUE</span><b>7</b><small>2 high-priority</small></div>
+            <div><span>POLICY FLAGS</span><b>3</b><small>review required</small></div>
+            <div><span>ENTITIES</span><b>4</b><small>consolidated</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap morning-strip reveal" data-delay="180">
+        <div class="brief-title"><span>09:00</span><b>MORNING FINANCE BRIEF</b></div>
+        <div class="brief-item"><i class="signal signal-blue"></i><span>Liquidity</span><b>Reserve coverage stable</b></div>
+        <div class="brief-item"><i class="signal signal-orange"></i><span>Approvals</span><b>2 платежа требуют CFO</b></div>
+        <div class="brief-item"><i class="signal signal-red"></i><span>Exceptions</span><b>1 новый получатель</b></div>
+      </div>
+    </section>
+
+    <section class="editorial-section pain-section">
+      <div class="page-wrap">
+        <div class="section-intro reveal">
+          <p class="section-label"><span>WHERE CONTROL BREAKS</span><b>02</b></p>
+          <div class="intro-grid">
+            <h2>Деньги редко теряются в одном месте. Контроль — тоже.</h2>
+            <p>Финансовая команда одновременно живёт в банках, таблицах, ERP, чатах и почте. Чем больше юрлиц, ролей и потоков — тем выше цена несинхронизированных решений.</p>
+          </div>
+        </div>
+
+        <div class="friction-map reveal">
+          <article class="friction-card c1"><span>01</span><h3>Разрозненная ликвидность</h3><p>Баланс распределён по счетам и юрлицам. Сводная картина появляется после ручной сверки.</p></article>
+          <article class="friction-card c2"><span>02</span><h3>Approval вне системы</h3><p>Согласования живут в мессенджерах, а контекст операции теряется между участниками.</p></article>
+          <article class="friction-card c3"><span>03</span><h3>Политики в PDF</h3><p>Лимиты и полномочия существуют как документы, но не как исполняемые правила процесса.</p></article>
+          <article class="friction-card c4"><span>04</span><h3>Исключения слишком поздно</h3><p>Риск виден после платежа: новый получатель, необычная сумма, нестандартный маршрут.</p></article>
+          <div class="friction-center" aria-hidden="true">
+            <span>FINANCE</span><b>CONTROL GAP</b><small>4 системных разрыва</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="architecture-section" id="architecture">
+      <div class="page-wrap">
+        <div class="architecture-head reveal">
+          <div>
+            <p class="section-label light"><span>CONTROL ARCHITECTURE</span><b>03</b></p>
+            <h2>Один слой между финансовой политикой и движением денег.</h2>
+          </div>
+          <p>KERN не требует менять всю инфраструктуру. Платформа соединяет банковские счета, ERP, роли и правила в общий операционный контур.</p>
+        </div>
+
+        <div class="architecture-canvas reveal">
+          <div class="source-column">
+            <span class="column-label">SOURCES</span>
+            <div class="source-node"><b>Bank accounts</b><small>Operating · Reserve · FX</small></div>
+            <div class="source-node"><b>ERP / accounting</b><small>Orders · invoices · entities</small></div>
+            <div class="source-node"><b>People & roles</b><small>Finance · CFO · operations</small></div>
+          </div>
+
+          <div class="core-column">
+            <span class="column-label">KERN CORE</span>
+            <div class="core-box">
+              <div class="core-ring"><span>K</span></div>
+              <h3>Policy engine</h3>
+              <p>Решает, что можно провести, кто должен согласовать и когда операция становится исключением.</p>
+              <div class="core-tags"><span>limits</span><span>roles</span><span>routing</span><span>risk</span></div>
+            </div>
+          </div>
+
+          <div class="output-column">
+            <span class="column-label">OUTPUTS</span>
+            <div class="output-row"><span>01</span><div><b>Payment execution</b><small>approved route</small></div><i>→</i></div>
+            <div class="output-row"><span>02</span><div><b>Liquidity view</b><small>consolidated</small></div><i>→</i></div>
+            <div class="output-row"><span>03</span><div><b>Risk queue</b><small>exceptions first</small></div><i>→</i></div>
+            <div class="output-row"><span>04</span><div><b>Audit trail</b><small>every decision</small></div><i>→</i></div>
+          </div>
+          <svg class="architecture-lines" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M290 110 C430 110 420 260 540 260"/>
+            <path d="M290 260 C430 260 430 260 540 260"/>
+            <path d="M290 410 C430 410 420 260 540 260"/>
+            <path d="M670 260 C810 260 820 110 930 110"/>
+            <path d="M670 260 C810 260 820 210 930 210"/>
+            <path d="M670 260 C810 260 820 310 930 310"/>
+            <path d="M670 260 C810 260 820 410 930 410"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-section modes-section">
+      <div class="page-wrap">
+        <div class="section-intro compact reveal">
+          <p class="section-label"><span>THREE OPERATING MODES</span><b>04</b></p>
+          <div class="intro-grid">
+            <h2>Один продукт. Три разных рабочих режима.</h2>
+            <p>Интерфейс меняет акцент в зависимости от задачи: ежедневные платежи, управление ликвидностью или контроль исключений.</p>
+          </div>
+        </div>
+
+        <div class="mode-switcher reveal" data-mode-switcher>
+          <div class="mode-tabs" role="tablist" aria-label="Рабочие режимы">
+            <button class="active" type="button" role="tab" aria-selected="true" data-mode="payments"><span>01</span>Payments desk</button>
+            <button type="button" role="tab" aria-selected="false" data-mode="treasury"><span>02</span>Treasury room</button>
+            <button type="button" role="tab" aria-selected="false" data-mode="exceptions"><span>03</span>Exception control</button>
+          </div>
+
+          <div class="mode-stage" data-mode-stage>
+            <div class="mode-copy">
+              <span class="mode-kicker" data-mode-kicker>PAYMENTS DESK</span>
+              <h3 data-mode-title>Платёж как управляемый процесс, а не отдельная кнопка.</h3>
+              <p data-mode-text>Создание, policy-check, согласование, исполнение и сверка складываются в один маршрут с понятным статусом.</p>
+              <ul data-mode-list>
+                <li>Единая очередь операций</li>
+                <li>Политики до исполнения</li>
+                <li>Контекст решения внутри платежа</li>
+              </ul>
+            </div>
+            <div class="mode-visual" data-mode-visual aria-live="polite">
+              <div class="payment-sheet">
+                <div class="sheet-head"><span>PAYMENT #0428</span><b>₽ 684 000</b></div>
+                <div class="sheet-row"><span>Получатель</span><b>Nordic Components</b></div>
+                <div class="sheet-row"><span>Политика</span><b class="blue-text">CFO approval</b></div>
+                <div class="sheet-row"><span>Статус</span><b>2 / 3 согласований</b></div>
+                <div class="sheet-track"><i style="--w:66%"></i></div>
+                <div class="sheet-foot"><span>Finance ✓</span><span>CFO · review</span><span>Ops · queued</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls-section" id="controls">
+      <div class="page-wrap controls-layout">
+        <div class="controls-copy reveal">
+          <p class="section-label light"><span>POLICY MATRIX</span><b>05</b></p>
+          <h2>Политика становится частью интерфейса.</h2>
+          <p>Правила больше не зависят от памяти сотрудников. KERN применяет их к каждой операции и показывает, почему выбран именно такой маршрут.</p>
+          <div class="policy-notes">
+            <div><span>ROLE</span><p>Кто может создать, согласовать и исполнять операцию.</p></div>
+            <div><span>LIMIT</span><p>Какая сумма требует дополнительного уровня контроля.</p></div>
+            <div><span>CONTEXT</span><p>Получатель, валюта, юрлицо, назначение и нестандартный сценарий.</p></div>
+          </div>
+        </div>
+
+        <div class="policy-table-wrap reveal" data-delay="100">
+          <table class="policy-table">
+            <caption>Пример матрицы финансовых политик</caption>
+            <thead><tr><th>Сценарий</th><th>≤ 100K</th><th>100–500K</th><th>&gt; 500K</th><th>Exception</th></tr></thead>
+            <tbody>
+              <tr><th>Постоянный поставщик</th><td>Finance</td><td>Finance + Lead</td><td>CFO</td><td>Review</td></tr>
+              <tr><th>Новый получатель</th><td colspan="3" class="warning-cell">Verification + Finance</td><td>Risk queue</td></tr>
+              <tr><th>Валютный платёж</th><td>Treasury</td><td>Treasury</td><td>CFO + Treasury</td><td>Review</td></tr>
+              <tr><th>Вне бюджета</th><td colspan="3" class="danger-cell">Budget owner + CFO</td><td>Blocked</td></tr>
+            </tbody>
+          </table>
+          <p class="table-note">Демонстрационная матрица: конкретные роли и лимиты настраиваются под политику компании.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="risk-section" id="risk">
+      <div class="page-wrap">
+        <div class="risk-head reveal">
+          <div><p class="section-label light"><span>RISK ROOM</span><b>06</b></p><h2>Смотреть не на все операции. Смотреть на те, которые отличаются.</h2></div>
+          <p>Risk room собирает аномалии в отдельный рабочий поток: новый контрагент, необычная сумма, изменение реквизитов, нестандартное время или нарушение политики.</p>
+        </div>
+
+        <div class="risk-grid reveal">
+          <div class="risk-heatmap">
+            <div class="heatmap-head"><span>RISK SIGNAL MAP / 24H</span><span>42 events</span></div>
+            <div class="heatmap-grid" aria-label="Тепловая карта риск-событий">
+              <i class="h1"></i><i></i><i class="h2"></i><i></i><i></i><i class="h3"></i><i></i><i></i>
+              <i></i><i class="h2"></i><i></i><i></i><i class="h1"></i><i></i><i class="h3"></i><i></i>
+              <i class="h2"></i><i></i><i></i><i class="h1"></i><i></i><i></i><i class="h2"></i><i></i>
+              <i></i><i class="h3"></i><i></i><i></i><i></i><i class="h2"></i><i></i><i class="h1"></i>
+              <i></i><i></i><i class="h1"></i><i></i><i class="h2"></i><i></i><i></i><i class="h3"></i>
+            </div>
+            <div class="heatmap-legend"><span><i></i>normal</span><span><i class="h1"></i>watch</span><span><i class="h2"></i>review</span><span><i class="h3"></i>high</span></div>
+          </div>
+
+          <div class="risk-queue">
+            <div class="queue-head"><span>EXCEPTIONS</span><b>3 active</b></div>
+            <article><span class="risk-code orange">R-17</span><div><b>Новый получатель</b><p>Реквизиты добавлены 18 минут назад.</p></div><small>review</small></article>
+            <article><span class="risk-code red">R-31</span><div><b>Сумма выше профиля</b><p>Операция в 4.8× выше медианы по контрагенту.</p></div><small>high</small></article>
+            <article><span class="risk-code blue">R-08</span><div><b>Маршрут изменён</b><p>Платёж переведён на другой operating account.</p></div><small>watch</small></article>
+          </div>
+
+          <div class="audit-stream">
+            <div class="queue-head"><span>AUDIT TRAIL</span><b>immutable log</b></div>
+            <div class="audit-line"><time>09:36:12</time><span>Finance created payment #0428</span></div>
+            <div class="audit-line"><time>09:36:13</time><span>Policy “CFO &gt; 500K” matched</span></div>
+            <div class="audit-line"><time>09:38:41</time><span>Finance lead approved</span></div>
+            <div class="audit-line current"><time>09:41:05</time><span>CFO opened review</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-section simulator-section">
+      <div class="page-wrap">
+        <div class="section-intro compact reveal">
+          <p class="section-label"><span>OPERATING LOAD</span><b>07</b></p>
+          <div class="intro-grid">
+            <h2>Проверьте, где у вашего процесса возникает нагрузка.</h2>
+            <p>Небольшой сценарный симулятор показывает не «экономию», а операционную сложность: сколько действий и участников появляется при росте платёжного потока.</p>
+          </div>
+        </div>
+
+        <div class="load-simulator reveal">
+          <div class="sim-controls">
+            <label for="paymentsRange"><span>Платежей в месяц</span><b data-payments-value>420</b></label>
+            <input id="paymentsRange" type="range" min="50" max="2000" step="10" value="420" data-payments-range>
+            <label for="entitiesRange"><span>Юрлиц</span><b data-entities-value>3</b></label>
+            <input id="entitiesRange" type="range" min="1" max="12" step="1" value="3" data-entities-range>
+            <label for="approvalRange"><span>Approval-уровней</span><b data-approvals-value>2</b></label>
+            <input id="approvalRange" type="range" min="1" max="5" step="1" value="2" data-approvals-range>
+          </div>
+          <div class="sim-output">
+            <div class="sim-score"><span>PROCESS COMPLEXITY</span><strong data-complexity-score>46</strong><small>/ 100 · illustrative index</small></div>
+            <div class="sim-bars">
+              <div><span>Контекстов</span><i><b data-context-bar style="--w:54%"></b></i><em data-context-value>medium</em></div>
+              <div><span>Согласований</span><i><b data-approval-bar style="--w:42%"></b></i><em data-approval-value>moderate</em></div>
+              <div><span>Исключений</span><i><b data-exception-bar style="--w:31%"></b></i><em data-exception-value>visible</em></div>
+            </div>
+            <p>Индекс демонстрационный и нужен только для визуализации сложности процесса — это не финансовый прогноз и не измерение эффективности.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="compare-section" id="compare">
+      <div class="page-wrap">
+        <div class="compare-head reveal">
+          <p class="section-label"><span>DEPLOYMENT CONTOURS</span><b>08</b></p>
+          <h2>Начать можно с одного процесса. Расширять — без смены модели.</h2>
+        </div>
+
+        <div class="compare-table-wrap reveal">
+          <table class="compare-table">
+            <thead>
+              <tr><th>Контур</th><th>CONTROL</th><th>OPERATIONS</th><th>ENTERPRISE</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>Фокус</th><td>Approval + policies</td><td>Payments + treasury</td><td>Multi-entity control</td></tr>
+              <tr><th>Платёжные маршруты</th><td>Базовые</td><td>Расширенные</td><td>Индивидуальные</td></tr>
+              <tr><th>Liquidity view</th><td>—</td><td>Да</td><td>Консолидированный</td></tr>
+              <tr><th>Risk room</th><td>Базовые сигналы</td><td>Расширенные</td><td>Policy + custom rules</td></tr>
+              <tr><th>Entities</th><td>1</td><td>Несколько</td><td>Группа компаний</td></tr>
+              <tr><th>Интеграции</th><td>Стандартные</td><td>Расширенные</td><td>Индивидуальный контур</td></tr>
+              <tr><th></th><td><button type="button" data-contour="Control">Выбрать Control</button></td><td><button type="button" data-contour="Operations">Выбрать Operations</button></td><td><button type="button" data-contour="Enterprise">Выбрать Enterprise</button></td></tr>
+            </tbody>
+          </table>
+          <p>Названия контуров и состав функций демонстрационные. Коммерческие условия и конкретный scope определяются отдельно.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-section blueprint-section">
+      <div class="page-wrap">
+        <div class="section-intro compact reveal">
+          <p class="section-label"><span>PILOT BLUEPRINT</span><b>09</b></p>
+          <div class="intro-grid">
+            <h2>Не «внедрение ради внедрения», а проверка конкретного финансового контура.</h2>
+            <p>Пример последовательности пилота. Сроки намеренно не фиксированы: реальный план зависит от интеграций, политик и количества участников.</p>
+          </div>
+        </div>
+
+        <ol class="blueprint reveal">
+          <li><span>01</span><div><b>Map</b><h3>Карта процесса</h3><p>Счета, роли, исключения, существующие approval-пути и точки ручной работы.</p></div></li>
+          <li><span>02</span><div><b>Model</b><h3>Политики и данные</h3><p>Переводим правила в исполняемую модель: лимиты, роли, триггеры и контекст.</p></div></li>
+          <li><span>03</span><div><b>Connect</b><h3>Рабочий контур</h3><p>Подключаем выбранные источники и строим один завершённый поток end-to-end.</p></div></li>
+          <li><span>04</span><div><b>Observe</b><h3>Исключения и аудит</h3><p>Проверяем, где система действительно снимает ручные разрывы и где нужны корректировки.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="page-wrap contact-layout">
+        <div class="contact-copy reveal">
+          <p class="section-label light"><span>BUILD YOUR CONTROL MAP</span><b>10</b></p>
+          <h2>Соберите первый финансовый контур.</h2>
+          <p>Выберите, что важнее проверить в пилоте. Мы сформируем демонстрационный scope прямо на странице — без отправки персональных данных.</p>
+        </div>
+
+        <div class="scope-builder reveal" data-delay="100">
+          <div class="scope-options" aria-label="Выбор сценария">
+            <button class="active" type="button" data-scope="Approvals">Approvals</button>
+            <button type="button" data-scope="Liquidity">Liquidity</button>
+            <button type="button" data-scope="Risk">Risk control</button>
+            <button type="button" data-scope="Multi-entity">Multi-entity</button>
+          </div>
+          <div class="scope-card">
+            <span>DEMO SCOPE</span>
+            <h3 data-scope-title>Approval control map</h3>
+            <p data-scope-text>Маршруты согласования, лимиты, роли и исключения для выбранного типа платежей.</p>
+            <div class="scope-meta"><span><b>01</b> process map</span><span><b>02</b> policy matrix</span><span><b>03</b> demo workflow</span></div>
+            <button class="scope-action" type="button" data-open-brief>Открыть finance brief <i>↗</i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-wrap footer-row">
+      <div><span class="brand-word">KERN</span><small>Financial control infrastructure concept</small></div>
+      <p>© <span data-year>XXI</span> | Все права защищены!</p>
+      <a href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="brief-dialog" data-brief-dialog aria-labelledby="briefTitle">
+    <div class="brief-dialog-inner">
+      <button class="dialog-close" type="button" aria-label="Закрыть" data-close-brief>×</button>
+      <div class="dialog-progress"><i data-brief-progress></i></div>
+      <div class="dialog-stage" data-brief-stage>
+        <span class="dialog-index">01 / 04</span>
+        <h2 id="briefTitle">Finance brief</h2>
+      </div>
+      <div class="dialog-nav">
+        <button type="button" data-brief-prev>Назад</button>
+        <button type="button" class="dialog-next" data-brief-next>Далее</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
