@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <title>IRONTRACE — Industrial Automation & Digital Twin</title>
+  <meta name="description" content="Инженерная платформа автоматизации производства: OT/PLC, edge-сбор данных, цифровой двойник, аналитика состояний и управление производственными сценариями.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+
+  <div class="boot" aria-hidden="true">
+    <span>IRONTRACE // CONTROL SYSTEM</span>
+    <span>SYNCING FIELD LAYERS</span>
+  </div>
+
+  <header class="command-strip" id="top">
+    <a class="brand" href="#top" aria-label="IRONTRACE — наверх">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>IRONTRACE</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#line">Линия</a>
+      <a href="#control">Контроль</a>
+      <a href="#architecture">Архитектура</a>
+      <a href="#implementation">Внедрение</a>
+    </nav>
+
+    <div class="header-meta" aria-label="Состояние демонстрации">
+      <span><i></i> SIMULATION ONLINE</span>
+      <button class="icon-button menu-button" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Открыть меню">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#line">01 / Линия</a>
+    <a href="#control">02 / Контроль</a>
+    <a href="#architecture">03 / Архитектура</a>
+    <a href="#implementation">04 / Внедрение</a>
+    <a href="#brief">05 / Scope builder</a>
+  </div>
+
+  <main id="main">
+    <section class="hero section-grid" aria-labelledby="heroTitle">
+      <div class="hero-index rail-label">SYS.09</div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Industrial automation / digital twin / condition intelligence</p>
+        <h1 id="heroTitle">ПРОИЗВОДСТВО<br><span>КАК ЖИВАЯ СИСТЕМА.</span></h1>
+        <p class="hero-lead">Связываем оборудование, сигналы, правила и операционные решения в единый инженерный контур — от полевого уровня до управляемого сценария.</p>
+        <div class="hero-actions">
+          <a class="action primary" href="#line">Открыть линию <span>↘</span></a>
+          <button class="action ghost js-open-brief" type="button">Собрать контур <span>↗</span></button>
+        </div>
+      </div>
+
+      <div class="hero-schematic" aria-label="Схема производственной линии">
+        <div class="schematic-head">
+          <span>LINE A / DIGITAL TWIN</span>
+          <span>STATUS 07:42:16</span>
+        </div>
+        <div class="line-visual" aria-hidden="true">
+          <div class="pipe p1"></div><div class="pipe p2"></div><div class="pipe p3"></div>
+          <div class="machine machine-a"><span>M01</span><b>FEED</b></div>
+          <div class="machine machine-b"><span>M02</span><b>CELL</b></div>
+          <div class="machine machine-c"><span>M03</span><b>VISION</b></div>
+          <div class="machine machine-d"><span>M04</span><b>PACK</b></div>
+          <div class="signal s1">24V</div><div class="signal s2">OPC UA</div><div class="signal s3">EDGE</div>
+          <div class="flow-dot f1"></div><div class="flow-dot f2"></div><div class="flow-dot f3"></div>
+        </div>
+        <div class="hero-readout">
+          <div><span>THROUGHPUT</span><strong data-live-throughput>148</strong><small>u/h</small></div>
+          <div><span>LOAD</span><strong data-live-load>72</strong><small>%</small></div>
+          <div><span>STATE</span><strong class="ok">SYNC</strong><small>nominal</small></div>
+        </div>
+      </div>
+
+      <div class="hero-footerline">
+        <span>PLC / SCADA / MES / ENERGY / VIBRATION / QUALITY</span>
+        <span>FIELD → EDGE → CONTEXT → ACTION</span>
+      </div>
+    </section>
+
+    <section class="line-lab" id="line" aria-labelledby="lineTitle">
+      <div class="section-code">01</div>
+      <div class="section-heading">
+        <p class="eyebrow">Digital twin / equipment map</p>
+        <h2 id="lineTitle">Не dashboard. <br>Модель реальной линии.</h2>
+        <p>Каждая станция — не абстрактная карточка, а узел с сигналами, состояниями, зависимостями и понятным следующим действием.</p>
+      </div>
+
+      <div class="equipment-console">
+        <div class="equipment-map" role="tablist" aria-label="Узлы линии">
+          <button class="node is-active" type="button" role="tab" aria-selected="true" data-node="press">
+            <span class="node-id">M01</span><span class="node-name">Press cell</span><span class="node-status">RUN</span>
+          </button>
+          <button class="node" type="button" role="tab" aria-selected="false" data-node="vision">
+            <span class="node-id">M02</span><span class="node-name">Vision gate</span><span class="node-status">RUN</span>
+          </button>
+          <button class="node" type="button" role="tab" aria-selected="false" data-node="robot">
+            <span class="node-id">M03</span><span class="node-name">Robot cell</span><span class="node-status warning">WATCH</span>
+          </button>
+          <button class="node" type="button" role="tab" aria-selected="false" data-node="pack">
+            <span class="node-id">M04</span><span class="node-name">Pack station</span><span class="node-status">RUN</span>
+          </button>
+        </div>
+
+        <article class="node-inspector" aria-live="polite">
+          <div class="inspector-topline">
+            <span id="nodeTag">M01 / PRESS CELL</span>
+            <span id="nodeProtocol">PROFINET</span>
+          </div>
+          <h3 id="nodeTitle">Прессовая ячейка</h3>
+          <p id="nodeText">Контроль цикла, усилия и теплового режима. Сигналы объединены в контекст операции, а не отображаются как разрозненные теги.</p>
+          <dl class="signal-list">
+            <div><dt>Cycle</dt><dd id="nodeMetric1">6.4 s</dd></div>
+            <div><dt>Force</dt><dd id="nodeMetric2">82 kN</dd></div>
+            <div><dt>Thermal</dt><dd id="nodeMetric3">61 °C</dd></div>
+            <div><dt>Next action</dt><dd id="nodeAction">Monitor trend</dd></div>
+          </dl>
+          <div class="trend" aria-hidden="true"><i style="--h:31%"></i><i style="--h:42%"></i><i style="--h:52%"></i><i style="--h:47%"></i><i style="--h:63%"></i><i style="--h:58%"></i><i style="--h:68%"></i><i style="--h:72%"></i><i style="--h:69%"></i><i style="--h:77%"></i><i style="--h:73%"></i><i style="--h:80%"></i></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="signal-chain" aria-labelledby="chainTitle">
+      <div class="chain-title">
+        <span class="section-code invert">02</span>
+        <div>
+          <p class="eyebrow">Signal → context → decision</p>
+          <h2 id="chainTitle">Сырые данные ценности не имеют.</h2>
+        </div>
+      </div>
+      <div class="chain-flow">
+        <div class="chain-step">
+          <span>FIELD</span>
+          <strong>23 840</strong>
+          <p>Теги, импульсы, параметры приводов, температура, ток, давление, вибрация.</p>
+        </div>
+        <div class="chain-arrow" aria-hidden="true">→</div>
+        <div class="chain-step">
+          <span>EDGE</span>
+          <strong>1 model</strong>
+          <p>Нормализация времени, качество сигнала, контекст оборудования, локальные правила.</p>
+        </div>
+        <div class="chain-arrow" aria-hidden="true">→</div>
+        <div class="chain-step">
+          <span>DECISION</span>
+          <strong>Action</strong>
+          <p>Предупреждение, подтверждение оператора, изменение режима, наряд или аналитический вывод.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="control-room" id="control" aria-labelledby="controlTitle">
+      <div class="section-code">03</div>
+      <div class="control-intro">
+        <p class="eyebrow">Operational simulation</p>
+        <h2 id="controlTitle">Control room без декоративных графиков.</h2>
+        <p>Демонстрационный стенд показывает, как нагрузка влияет на состояние линии и какие сигналы становятся приоритетными.</p>
+      </div>
+
+      <div class="control-grid">
+        <div class="load-panel">
+          <div class="panel-label">SIM / LOAD PROFILE</div>
+          <label for="loadRange">Нагрузка линии <output id="loadOutput">72%</output></label>
+          <input id="loadRange" type="range" min="35" max="98" value="72" step="1">
+          <div class="gauge" aria-hidden="true"><div class="gauge-fill" id="gaugeFill"></div><i></i></div>
+          <div class="metric-strip">
+            <div><span>THROUGHPUT</span><b id="throughputValue">148 u/h</b></div>
+            <div><span>ENERGY / UNIT</span><b id="energyValue">1.8 kWh</b></div>
+            <div><span>RISK INDEX</span><b id="riskValue">LOW</b></div>
+          </div>
+        </div>
+
+        <div class="event-log" aria-label="Журнал событий">
+          <div class="panel-label">EVENT STREAM / DEMO</div>
+          <ol id="eventList">
+            <li><time>07:42:16</time><span class="event-ok">INFO</span><p>Line model synchronized with edge layer.</p></li>
+            <li><time>07:42:11</time><span class="event-ok">INFO</span><p>Vision station batch context updated.</p></li>
+            <li><time>07:41:58</time><span class="event-watch">WATCH</span><p>Robot axis vibration entered observation band.</p></li>
+            <li><time>07:41:44</time><span class="event-ok">INFO</span><p>Energy profile recalculated for current load.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="fault-room" aria-labelledby="faultTitle">
+      <div class="fault-header">
+        <p class="eyebrow">Root-cause sequence</p>
+        <h2 id="faultTitle">Не «авария». <br>Цепочка причин.</h2>
+        <p>Пример аналитического сценария: система показывает событие как последовательность контекста, а не как красную лампу без объяснения.</p>
+      </div>
+
+      <div class="fault-sequence" role="tablist" aria-label="Этапы анализа события">
+        <button type="button" class="fault-step is-active" role="tab" aria-selected="true" data-fault="0"><b>01</b><span>Signal drift</span></button>
+        <button type="button" class="fault-step" role="tab" aria-selected="false" data-fault="1"><b>02</b><span>Pattern match</span></button>
+        <button type="button" class="fault-step" role="tab" aria-selected="false" data-fault="2"><b>03</b><span>Context check</span></button>
+        <button type="button" class="fault-step" role="tab" aria-selected="false" data-fault="3"><b>04</b><span>Operator action</span></button>
+      </div>
+
+      <div class="fault-detail" aria-live="polite">
+        <span id="faultKicker">AXIS A3 / VIBRATION</span>
+        <h3 id="faultDetailTitle">Сигнал вышел из собственного базового диапазона.</h3>
+        <p id="faultDetailText">Система фиксирует не абсолютный порог, а устойчивое отклонение от привычного профиля именно этой оси.</p>
+        <div class="fault-wave" aria-hidden="true"><svg viewBox="0 0 800 140" preserveAspectRatio="none"><path d="M0 83 C35 45 65 110 100 73 S160 67 195 82 S250 41 285 73 S345 117 385 61 S448 101 490 70 S550 42 590 78 S650 111 690 62 S755 98 800 72"/></svg></div>
+      </div>
+    </section>
+
+    <section class="architecture" id="architecture" aria-labelledby="architectureTitle">
+      <div class="section-code">04</div>
+      <div class="architecture-heading">
+        <p class="eyebrow">Layered architecture</p>
+        <h2 id="architectureTitle">Инфраструктура не должна быть чёрным ящиком.</h2>
+      </div>
+
+      <div class="stack-shell">
+        <button type="button" class="stack-layer is-active" data-layer="apps" aria-pressed="true">
+          <span>04</span><b>APPLICATION</b><small>Operations / Maintenance / Analytics</small>
+        </button>
+        <button type="button" class="stack-layer" data-layer="data" aria-pressed="false">
+          <span>03</span><b>CONTEXT</b><small>Models / Historian / Rules</small>
+        </button>
+        <button type="button" class="stack-layer" data-layer="edge" aria-pressed="false">
+          <span>02</span><b>EDGE</b><small>Normalization / Buffers / Logic</small>
+        </button>
+        <button type="button" class="stack-layer" data-layer="field" aria-pressed="false">
+          <span>01</span><b>FIELD</b><small>PLC / Drives / Sensors / Machines</small>
+        </button>
+      </div>
+
+      <div class="stack-note" aria-live="polite">
+        <span id="layerCode">L04 / APPLICATION</span>
+        <h3 id="layerTitle">Рабочие сценарии вместо ещё одного экрана.</h3>
+        <p id="layerText">Верхний слой собирает данные в конкретные действия: контроль смены, техническое обслуживание, анализ потерь, качество и инженерные расследования.</p>
+      </div>
+    </section>
+
+    <section class="retrofit" aria-labelledby="retrofitTitle">
+      <div class="retrofit-copy">
+        <p class="eyebrow">Brownfield / new build</p>
+        <h2 id="retrofitTitle">Автоматизация без требования «заменить всё».</h2>
+        <p>Контур может строиться поверх существующих PLC, приводов и машин. Для демонстрационного проекта показаны три типовых режима внедрения — без привязки к конкретному производителю оборудования.</p>
+      </div>
+      <div class="retrofit-rails">
+        <details open>
+          <summary><span>01</span> Retrofit</summary>
+          <div><p>Подключение существующего оборудования через доступные протоколы и edge-шлюзы.</p><strong>Цель: visibility + context</strong></div>
+        </details>
+        <details>
+          <summary><span>02</span> New cell</summary>
+          <div><p>Проектирование сигналов, состояний и диагностических сценариев сразу как части новой ячейки.</p><strong>Цель: maintainability by design</strong></div>
+        </details>
+        <details>
+          <summary><span>03</span> Energy layer</summary>
+          <div><p>Связь потребления с продуктом, режимом и конкретным производственным состоянием.</p><strong>Цель: energy context</strong></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="implementation" id="implementation" aria-labelledby="implementationTitle">
+      <div class="implementation-head">
+        <span class="section-code invert">05</span>
+        <div>
+          <p class="eyebrow">Engineering sequence</p>
+          <h2 id="implementationTitle">Внедрение как инженерная последовательность.</h2>
+        </div>
+      </div>
+
+      <div class="gantt" aria-label="Этапы внедрения">
+        <div class="gantt-axis"><span>DISCOVER</span><span>MODEL</span><span>CONNECT</span><span>VERIFY</span><span>OPERATE</span></div>
+        <div class="gantt-row"><b>01 / Field audit</b><i style="--start:1;--span:2"></i><p>Сигналы, протоколы, ограничения, критичные узлы.</p></div>
+        <div class="gantt-row"><b>02 / State model</b><i style="--start:2;--span:2"></i><p>Состояния машин, линии и операций.</p></div>
+        <div class="gantt-row"><b>03 / Edge layer</b><i style="--start:3;--span:2"></i><p>Сбор, нормализация, буферизация, локальная логика.</p></div>
+        <div class="gantt-row"><b>04 / Scenarios</b><i style="--start:4;--span:2"></i><p>Оповещения, расследования, maintenance и отчётность.</p></div>
+        <div class="gantt-row"><b>05 / Acceptance</b><i style="--start:5;--span:1"></i><p>Проверка сигналов, сценариев и отказоустойчивости.</p></div>
+      </div>
+    </section>
+
+    <section class="blueprint" aria-labelledby="blueprintTitle">
+      <div class="blueprint-title">
+        <p class="eyebrow">Reference scenario / not a claimed case</p>
+        <h2 id="blueprintTitle">Демонстрационный blueprint: сборочная линия.</h2>
+      </div>
+      <div class="blueprint-grid">
+        <div><span>INPUT</span><strong>4 cells</strong><p>PLC + drives + vision + energy meters</p></div>
+        <div><span>EDGE</span><strong>2 nodes</strong><p>Redundant collection and local rule execution</p></div>
+        <div><span>MODEL</span><strong>18 states</strong><p>Line, machine and maintenance context</p></div>
+        <div><span>OUTPUT</span><strong>6 flows</strong><p>Shift, fault, quality, energy, maintenance, engineering</p></div>
+      </div>
+      <p class="blueprint-note">Все значения в этом блоке — демонстрационные и показывают структуру решения, а не характеристики конкретного внедрения.</p>
+    </section>
+
+    <section class="brief" id="brief" aria-labelledby="briefTitle">
+      <div class="brief-aside">
+        <span class="rail-label">SCOPE BUILDER</span>
+        <p>Никакие данные не отправляются. Результат формируется локально в браузере.</p>
+      </div>
+      <div class="brief-main">
+        <p class="eyebrow">Project framing</p>
+        <h2 id="briefTitle">Соберите черновой контур задачи.</h2>
+        <div class="builder" data-builder>
+          <fieldset>
+            <legend>Тип площадки</legend>
+            <button type="button" class="choice is-active" data-group="site" data-value="Сборочная линия">Сборочная линия</button>
+            <button type="button" class="choice" data-group="site" data-value="Процессное производство">Процессное производство</button>
+            <button type="button" class="choice" data-group="site" data-value="Склад / intralogistics">Склад / intralogistics</button>
+          </fieldset>
+          <fieldset>
+            <legend>Главный фокус</legend>
+            <button type="button" class="choice is-active" data-group="goal" data-value="Прозрачность состояний">Прозрачность состояний</button>
+            <button type="button" class="choice" data-group="goal" data-value="Диагностика и maintenance">Диагностика</button>
+            <button type="button" class="choice" data-group="goal" data-value="Энергия и потери">Энергия</button>
+          </fieldset>
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <button type="button" class="choice is-active" data-group="infra" data-value="Существующие PLC / brownfield">Brownfield</button>
+            <button type="button" class="choice" data-group="infra" data-value="Новые ячейки / greenfield">Greenfield</button>
+            <button type="button" class="choice" data-group="infra" data-value="Смешанный контур">Mixed</button>
+          </fieldset>
+        </div>
+        <div class="scope-output" aria-live="polite">
+          <span>GENERATED SCOPE / DEMO</span>
+          <p id="scopeText">Сборочная линия → прозрачность состояний → существующие PLC / brownfield.</p>
+          <button class="action primary js-open-brief" type="button">Открыть brief <span>↗</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>IRONTRACE</strong><span>Industrial automation / digital twin</span></div>
+    <div><a href="#top">TOP ↑</a><span>© <span data-year>XXI</span> / DEMO CONCEPT</span></div>
+  </footer>
+
+  <dialog class="brief-dialog" id="briefDialog" aria-labelledby="dialogTitle">
+    <form method="dialog" class="dialog-shell">
+      <button class="dialog-close" value="close" aria-label="Закрыть">×</button>
+      <span class="dialog-code">PROJECT FRAME / LOCAL DEMO</span>
+      <h2 id="dialogTitle">Контур промышленной задачи</h2>
+      <p>Это демонстрационный frontend-сценарий. Он не отправляет данные и не создаёт заявку.</p>
+      <div class="dialog-scope" id="dialogScope"></div>
+      <div class="dialog-grid">
+        <div><span>01</span><b>Field audit</b><p>Определить сигналы, протоколы, ограничения и критичные узлы.</p></div>
+        <div><span>02</span><b>State model</b><p>Сформировать понятную модель состояний и событий.</p></div>
+        <div><span>03</span><b>One scenario</b><p>Проверить один ценный сценарий до масштабирования.</p></div>
+      </div>
+      <button class="action primary" value="close">Закрыть brief <span>×</span></button>
+    </form>
+  </dialog>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
