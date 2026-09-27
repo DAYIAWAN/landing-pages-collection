@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="MORPHO — концепт цифровой клиники: клинический атлас, маршрут пациента, контекстная диагностика и персональный care-plan в одном интерфейсе.">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="color-scheme" content="light dark">
+  <title>MORPHO — Digital Clinic / Clinical Atlas</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="topline" data-header>
+    <a class="brand" href="#top" aria-label="MORPHO — начало страницы">
+      <span class="brand__mark">M</span>
+      <span class="brand__name">MORPHO°</span>
+    </a>
+    <div class="topline__meta" aria-label="Статус концепта">
+      <span>Digital clinic concept</span>
+      <span class="topline__pulse" aria-hidden="true"></span>
+      <span>patient-safe demo</span>
+    </div>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Открыть меню</span>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="site-nav" id="site-nav" data-nav aria-label="Основная навигация">
+    <a href="#atlas"><span>01</span> Атлас</a>
+    <a href="#trace"><span>02</span> Маршрут</a>
+    <a href="#layers"><span>03</span> Слои</a>
+    <a href="#clinician"><span>04</span> Врач</a>
+    <a href="#access"><span>05</span> Доступность</a>
+    <a href="#scenarios"><span>06</span> Сценарии</a>
+    <a href="#planner"><span>07</span> План</a>
+  </nav>
+
+  <aside class="rail" aria-label="Навигация по разделам">
+    <span class="rail__brand">M°</span>
+    <div class="rail__track">
+      <a href="#top" class="rail__dot is-active" aria-label="Первый экран" data-rail="top"></a>
+      <a href="#atlas" class="rail__dot" aria-label="Клинический атлас" data-rail="atlas"></a>
+      <a href="#trace" class="rail__dot" aria-label="Маршрут пациента" data-rail="trace"></a>
+      <a href="#layers" class="rail__dot" aria-label="Слои данных" data-rail="layers"></a>
+      <a href="#clinician" class="rail__dot" aria-label="Интерфейс врача" data-rail="clinician"></a>
+      <a href="#access" class="rail__dot" aria-label="Доступность" data-rail="access"></a>
+      <a href="#scenarios" class="rail__dot" aria-label="Сценарии" data-rail="scenarios"></a>
+      <a href="#planner" class="rail__dot" aria-label="План заботы" data-rail="planner"></a>
+    </div>
+    <span class="rail__year">21+</span>
+  </aside>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__type">
+        <p class="eyebrow">HealthTech / diagnostic wayfinding / 00</p>
+        <h1 id="hero-title">
+          <span class="hero__word hero__word--a">MOR</span>
+          <span class="hero__word hero__word--b">PHO</span>
+        </h1>
+        <p class="hero__statement">Клиника как система навигации по человеку, а не набор разрозненных кабинетов.</p>
+      </div>
+
+      <div class="hero__atlas" aria-label="Абстрактный клинический атлас человека">
+        <svg viewBox="0 0 520 760" role="img" aria-labelledby="hero-atlas-title">
+          <title id="hero-atlas-title">Абстрактная медицинская схема человеческого тела</title>
+          <g fill="none" stroke="currentColor" stroke-width="2">
+            <ellipse cx="260" cy="82" rx="46" ry="56"/>
+            <path d="M260 138v98m-87 40c18-68 46-103 87-103s69 35 87 103m-154 7 22 166m112-166-22 166M228 440l-34 252m98-252 34 252"/>
+            <path d="M209 262h102M221 330h78M217 400h86" stroke-dasharray="6 8"/>
+            <path d="M260 179c-28 32-35 58-20 78 11 14 29 14 40 0 15-20 8-46-20-78Z"/>
+            <ellipse cx="234" cy="300" rx="24" ry="36"/>
+            <ellipse cx="286" cy="300" rx="24" ry="36"/>
+          </g>
+          <g class="hero__scan" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="260" cy="220" r="96"/>
+            <circle cx="260" cy="220" r="126" stroke-dasharray="3 12"/>
+            <path d="M134 220h252M260 94v252"/>
+          </g>
+          <g fill="currentColor">
+            <circle cx="260" cy="220" r="6"/>
+            <circle cx="214" cy="298" r="5"/>
+            <circle cx="312" cy="380" r="5"/>
+          </g>
+        </svg>
+        <div class="hero__annotation hero__annotation--1"><b>01</b><span>контекст</span></div>
+        <div class="hero__annotation hero__annotation--2"><b>02</b><span>сигналы</span></div>
+        <div class="hero__annotation hero__annotation--3"><b>03</b><span>решение</span></div>
+      </div>
+
+      <div class="hero__ticker" aria-label="Принципы интерфейса">
+        <span>NO BLACK BOX</span><span>HUMAN REVIEW</span><span>ACCESSIBLE BY DESIGN</span><span>CONTEXT BEFORE CONCLUSION</span><span>NO BLACK BOX</span>
+      </div>
+
+      <div class="hero__foot">
+        <p>Демонстрационная концепция интерфейса. Не является медицинской услугой и не заменяет консультацию специалиста.</p>
+        <a href="#atlas" class="scan-link">начать сканирование <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="atlas section" id="atlas" data-section aria-labelledby="atlas-title">
+      <div class="section-index"><span>01</span><em>Clinical atlas</em></div>
+      <header class="atlas__header">
+        <p class="kicker">Вместо списка услуг — карта вопросов</p>
+        <h2 id="atlas-title">Где <mark>сигнал</mark> становится клиническим контекстом.</h2>
+      </header>
+
+      <div class="atlas__stage">
+        <div class="atlas__body">
+          <svg viewBox="0 0 420 620" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6">
+              <ellipse cx="210" cy="58" rx="36" ry="44"/>
+              <path d="M210 102v84m-74 45c14-56 38-86 74-86s60 30 74 86m-130 9 19 136m74-136-19 136M183 366l-28 206m82-206 28 206"/>
+              <path d="M166 206h88M172 262h76M170 320h80" stroke-dasharray="4 9"/>
+            </g>
+          </svg>
+          <button class="system-node system-node--heart is-active" type="button" data-system="cardio" aria-pressed="true"><span>01</span><b>сердце</b></button>
+          <button class="system-node system-node--metabolic" type="button" data-system="metabolic" aria-pressed="false"><span>02</span><b>метаболизм</b></button>
+          <button class="system-node system-node--sleep" type="button" data-system="sleep" aria-pressed="false"><span>03</span><b>сон</b></button>
+          <button class="system-node system-node--stress" type="button" data-system="stress" aria-pressed="false"><span>04</span><b>нагрузка</b></button>
+        </div>
+
+        <article class="atlas__panel" aria-live="polite">
+          <div class="atlas__panel-top">
+            <span data-system-code>01 / CARDIO</span>
+            <span class="signal-dot"></span>
+          </div>
+          <h3 data-system-title>Сердечно-сосудистый контекст</h3>
+          <p data-system-copy>Интерфейс собирает жалобы, бытовой контекст, доступные измерения и историю наблюдений в один читаемый маршрут — без автоматических диагнозов.</p>
+          <dl class="atlas__facts" data-system-facts>
+            <div><dt>Фокус</dt><dd>динамика, а не единичная цифра</dd></div>
+            <div><dt>Читает</dt><dd>врач + пациент</dd></div>
+            <div><dt>Результат</dt><dd>структурированный вопрос</dd></div>
+          </dl>
+          <div class="atlas__wave" aria-hidden="true">
+            <svg viewBox="0 0 600 120" preserveAspectRatio="none"><path d="M0 70h74l20-15 22 34 22-72 28 85 22-42 20 10h72l18-18 22 22 30-52 25 79 24-46 25 15h176"/></svg>
+          </div>
+        </article>
+      </div>
+      <p class="atlas__note">Каждый маркер — не «орган для продажи услуги», а точка входа в клинический диалог.</p>
+    </section>
+
+    <section class="trace section" id="trace" data-section aria-labelledby="trace-title">
+      <div class="trace__mast">
+        <div class="section-index section-index--light"><span>02</span><em>Visit trace</em></div>
+        <h2 id="trace-title">Один визит.<br>Пять состояний интерфейса.</h2>
+        <p>Маршрут не прячется за «умным алгоритмом»: пользователь видит, что происходит с информацией на каждом этапе.</p>
+      </div>
+
+      <div class="trace__line" role="tablist" aria-label="Этапы маршрута пациента">
+        <button type="button" class="trace-step is-active" data-trace="intake" role="tab" aria-selected="true"><span>00:00</span><b>Intake</b><i></i></button>
+        <button type="button" class="trace-step" data-trace="signals" role="tab" aria-selected="false"><span>00:07</span><b>Signals</b><i></i></button>
+        <button type="button" class="trace-step" data-trace="review" role="tab" aria-selected="false"><span>00:18</span><b>Review</b><i></i></button>
+        <button type="button" class="trace-step" data-trace="plan" role="tab" aria-selected="false"><span>00:32</span><b>Plan</b><i></i></button>
+        <button type="button" class="trace-step" data-trace="follow" role="tab" aria-selected="false"><span>+14d</span><b>Follow-up</b><i></i></button>
+      </div>
+
+      <div class="trace__readout" aria-live="polite">
+        <div class="trace__code" data-trace-code>INTAKE / 001</div>
+        <h3 data-trace-title>Человек формулирует не диагноз, а задачу.</h3>
+        <p data-trace-copy>Первый экран помогает описать самочувствие, ограничения, цели и обстоятельства понятным языком. Никаких «предсказаний» до врачебного рассмотрения.</p>
+        <div class="trace__signals" data-trace-signals>
+          <span>контекст дня</span><span>самочувствие</span><span>цель обращения</span><span>история</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="layers section" id="layers" data-section aria-labelledby="layers-title">
+      <div class="section-index"><span>03</span><em>Context layers</em></div>
+      <div class="layers__intro">
+        <p class="kicker">Не dashboard. Не поток карточек.</p>
+        <h2 id="layers-title">Информация живёт <span>слоями.</span></h2>
+      </div>
+
+      <div class="layer-stack" data-layer-stack>
+        <button type="button" class="layer-band layer-band--history is-active" data-layer="history" aria-pressed="true">
+          <span class="layer-band__no">L1</span><strong>История</strong><small>что уже известно</small><b>+</b>
+        </button>
+        <button type="button" class="layer-band layer-band--signals" data-layer="signals" aria-pressed="false">
+          <span class="layer-band__no">L2</span><strong>Сигналы</strong><small>что изменилось</small><b>+</b>
+        </button>
+        <button type="button" class="layer-band layer-band--context" data-layer="context" aria-pressed="false">
+          <span class="layer-band__no">L3</span><strong>Контекст</strong><small>что могло повлиять</small><b>+</b>
+        </button>
+        <button type="button" class="layer-band layer-band--plan" data-layer="plan" aria-pressed="false">
+          <span class="layer-band__no">L4</span><strong>План</strong><small>что делаем дальше</small><b>+</b>
+        </button>
+      </div>
+
+      <div class="layer-detail" aria-live="polite">
+        <span class="layer-detail__index" data-layer-code>L1 / HISTORY</span>
+        <p data-layer-copy>Предыдущие обращения, известные ограничения и важные наблюдения остаются в видимом контексте, а не исчезают между визитами.</p>
+        <div class="layer-detail__grid" data-layer-points>
+          <span>события</span><span>наблюдения</span><span>назначения</span><span>заметки пациента</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="clinician section" id="clinician" data-section aria-labelledby="clinician-title">
+      <div class="clinician__black">
+        <div class="section-index section-index--light"><span>04</span><em>Clinician mode</em></div>
+        <p class="clinician__eyebrow">Human review is the interface</p>
+        <h2 id="clinician-title">Врач видит не «скоринг», а <span>историю решения.</span></h2>
+        <div class="clinician__ledger" aria-label="Пример клинической ленты">
+          <div><time>09:14</time><p>Пациент отметил новую утомляемость после изменения режима сна.</p><span>self report</span></div>
+          <div><time>09:16</time><p>Доступные домашние измерения добавлены как контекст, без автоматической интерпретации.</p><span>signal</span></div>
+          <div><time>09:21</time><p>Система подсветила расхождение с предыдущей динамикой для ручного просмотра.</p><span>attention</span></div>
+          <div><time>09:24</time><p>Решение и следующий шаг фиксируются специалистом.</p><span>human review</span></div>
+        </div>
+      </div>
+      <div class="clinician__paper">
+        <p class="clinician__big">01</p>
+        <blockquote>«Автоматизация должна сокращать рутину, а не прятать ответственность.»</blockquote>
+        <div class="clinician__principles">
+          <p><b>Visible source</b><span>видно, откуда пришла информация</span></p>
+          <p><b>Visible change</b><span>видно, что изменилось относительно прошлого</span></p>
+          <p><b>Visible owner</b><span>видно, кто подтвердил решение</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="access section" id="access" data-section aria-labelledby="access-title">
+      <div class="section-index"><span>05</span><em>Access mode</em></div>
+      <header class="access__head">
+        <h2 id="access-title">Доступность — не настройка в подвале.</h2>
+        <p>Переключатели ниже реально меняют демонстрационный интерфейс этой секции.</p>
+      </header>
+
+      <div class="access__console" data-access-console>
+        <div class="access__sample" data-access-sample>
+          <span class="access__code">A11Y / LIVE PREVIEW</span>
+          <p class="access__label">Следующий шаг</p>
+          <h3>Проверить динамику вместе со специалистом.</h3>
+          <p>Текст не должен становиться труднее для чтения только потому, что интерфейс выглядит «технологично».</p>
+          <button type="button">Продолжить</button>
+        </div>
+        <div class="access__controls" aria-label="Настройки демонстрации доступности">
+          <button type="button" data-access="contrast" aria-pressed="false"><span>01</span><b>Контраст</b><em>normal / high</em></button>
+          <button type="button" data-access="type" aria-pressed="false"><span>02</span><b>Размер текста</b><em>100 / 118%</em></button>
+          <button type="button" data-access="motion" aria-pressed="false"><span>03</span><b>Движение</b><em>on / reduced</em></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="scenarios section" id="scenarios" data-section aria-labelledby="scenarios-title">
+      <div class="section-index section-index--light"><span>06</span><em>Care scenarios</em></div>
+      <div class="scenarios__top">
+        <h2 id="scenarios-title">Три сценария.<br>Три совершенно разных маршрута.</h2>
+        <p>Один и тот же интерфейс перестраивает приоритеты под задачу, вместо того чтобы продавать одинаковый «чекап» каждому.</p>
+      </div>
+
+      <div class="scenario-switch" role="tablist" aria-label="Сценарии заботы">
+        <button class="scenario-row is-active" type="button" data-scenario="prevent" role="tab" aria-selected="true">
+          <span>01</span><strong>Профилактический обзор</strong><em>нет острой жалобы</em><b>→</b>
+        </button>
+        <button class="scenario-row" type="button" data-scenario="monitor" role="tab" aria-selected="false">
+          <span>02</span><strong>Динамическое наблюдение</strong><em>важна траектория изменений</em><b>→</b>
+        </button>
+        <button class="scenario-row" type="button" data-scenario="recovery" role="tab" aria-selected="false">
+          <span>03</span><strong>Восстановление</strong><em>важна переносимость нагрузки</em><b>→</b>
+        </button>
+      </div>
+
+      <div class="scenario-readout" aria-live="polite">
+        <div class="scenario-readout__no" data-scenario-code>01 / PREVENT</div>
+        <div class="scenario-readout__path" data-scenario-path>
+          <span>контекст</span><i></i><span>базовый обзор</span><i></i><span>врачебная интерпретация</span><i></i><span>следующий ориентир</span>
+        </div>
+        <p data-scenario-copy>Задача — увидеть отправную точку и договориться, что действительно стоит отслеживать дальше. Без обещаний «найти всё».</p>
+      </div>
+    </section>
+
+    <section class="planner section" id="planner" data-section aria-labelledby="planner-title">
+      <div class="planner__top">
+        <div class="section-index"><span>07</span><em>Build a route</em></div>
+        <h2 id="planner-title">Соберите маршрут.<br><span>Без персональных данных.</span></h2>
+        <p>Это интерфейсная демонстрация: выбор остаётся только в браузере и ничего не отправляет.</p>
+      </div>
+
+      <div class="planner__machine">
+        <fieldset class="planner__axis" data-planner="goal">
+          <legend>01 / цель</legend>
+          <label><input type="radio" name="goal" value="Понять исходную точку" checked><span>исходная точка</span></label>
+          <label><input type="radio" name="goal" value="Отследить динамику"><span>динамика</span></label>
+          <label><input type="radio" name="goal" value="Поддержать восстановление"><span>восстановление</span></label>
+        </fieldset>
+        <fieldset class="planner__axis" data-planner="format">
+          <legend>02 / формат</legend>
+          <label><input type="radio" name="format" value="Цифровой intake + визит" checked><span>digital + clinic</span></label>
+          <label><input type="radio" name="format" value="Только очный маршрут"><span>clinic only</span></label>
+          <label><input type="radio" name="format" value="Наблюдение после визита"><span>follow-up</span></label>
+        </fieldset>
+        <fieldset class="planner__axis" data-planner="pace">
+          <legend>03 / темп</legend>
+          <label><input type="radio" name="pace" value="Один обзор"><span>single</span></label>
+          <label><input type="radio" name="pace" value="Короткий цикл" checked><span>short cycle</span></label>
+          <label><input type="radio" name="pace" value="Длительное наблюдение"><span>longitudinal</span></label>
+        </fieldset>
+      </div>
+
+      <div class="planner__result" aria-live="polite">
+        <div><span>ROUTE / DEMO</span><b data-plan-code>M-01</b></div>
+        <p data-plan-summary>Понять исходную точку · Цифровой intake + визит · Короткий цикл</p>
+        <button class="planner__open" type="button" data-open-pass>открыть care-pass <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">MORPHO°</div>
+    <p>Digital clinic interface concept.<br>Демонстрационный проект для портфолио.</p>
+    <p>© <span data-year>XXI</span> / Все права защищены.</p>
+    <a href="#top">↑ наверх</a>
+  </footer>
+
+  <dialog class="care-pass" data-pass>
+    <button class="care-pass__close" type="button" data-close-pass aria-label="Закрыть">×</button>
+    <span class="care-pass__tag">MORPHO / CARE-PASS</span>
+    <h2>Ваш демонстрационный маршрут</h2>
+    <div class="care-pass__route" data-pass-route></div>
+    <p>Никакие данные не отправлены и не сохранены. В реальном продукте такой экран мог бы стать стартовой точкой безопасного intake-процесса.</p>
+    <button class="care-pass__done" type="button" data-close-pass>понятно</button>
+  </dialog>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
