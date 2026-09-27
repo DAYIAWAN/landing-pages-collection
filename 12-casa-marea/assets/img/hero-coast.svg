@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+  <title id="t">Casa Marea у океана на закате</title>
+  <desc id="d">Стилизованный приморский отель на скале, океан и вечернее небо.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0a06d"/>
+      <stop offset="0.55" stop-color="#f4c9a2"/>
+      <stop offset="1" stop-color="#f7e7d3"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#527c83"/>
+      <stop offset="1" stop-color="#163c43"/>
+    </linearGradient>
+    <linearGradient id="cliff" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a3583e"/>
+      <stop offset="1" stop-color="#5d3026"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1190" cy="230" r="92" fill="#fff1cf" opacity=".84"/>
+  <ellipse cx="1190" cy="250" rx="180" ry="40" fill="#fff0cc" opacity=".22" filter="url(#soft)"/>
+  <path d="M0 565 C220 535 340 580 520 548 C700 515 870 528 1010 560 C1210 606 1390 548 1600 570 L1600 1000 L0 1000Z" fill="url(#sea)"/>
+  <g fill="none" stroke="#d8ece7" stroke-width="3" opacity=".42">
+    <path d="M0 655 C200 632 365 680 560 648 S960 634 1160 664 S1400 630 1600 654"/>
+    <path d="M0 735 C220 704 350 756 560 725 S930 714 1170 748 S1430 705 1600 728"/>
+    <path d="M0 825 C210 800 390 842 600 816 S980 800 1200 834 S1420 808 1600 820"/>
+  </g>
+  <path d="M0 530 L250 500 420 552 590 520 765 575 900 548 1095 608 1220 592 1410 655 1600 632 1600 1000 0 1000Z" fill="url(#cliff)"/>
+  <path d="M0 600 L280 570 500 615 705 598 910 650 1110 630 1300 700 1600 678 1600 1000 0 1000Z" fill="#3a2925" opacity=".66"/>
+  <g transform="translate(560 420)">
+    <rect x="0" y="0" width="520" height="245" rx="4" fill="#e9dfca"/>
+    <rect x="32" y="33" width="180" height="160" fill="#d7ccb5"/>
+    <rect x="242" y="30" width="246" height="170" fill="#f1e9d9"/>
+    <rect x="74" y="58" width="105" height="92" fill="#2f5559"/>
+    <rect x="282" y="58" width="76" height="98" fill="#31595e"/>
+    <rect x="382" y="58" width="70" height="98" fill="#31595e"/>
+    <rect x="20" y="205" width="480" height="16" fill="#764436"/>
+    <rect x="-75" y="-28" width="670" height="36" fill="#b85f42"/>
+    <g fill="#804632">
+      <rect x="-48" y="-42" width="10" height="95"/>
+      <rect x="558" y="-42" width="10" height="95"/>
+    </g>
+    <g stroke="#584038" stroke-width="6" opacity=".72">
+      <path d="M40 215v110M125 215v110M210 215v110M295 215v110M380 215v110M465 215v110"/>
+    </g>
+  </g>
+  <g fill="#1d3737" opacity=".9">
+    <path d="M1180 520c20-115 70-174 92-175 12 52-10 108-22 136 45-73 89-98 118-94-10 56-66 114-98 142 60-36 107-37 133-21-22 53-93 75-137 82l-19 150h-40l22-148c-48-6-115-31-136-79 31-18 90-5 136 23-38-37-87-92-85-145 33-3 76 26 108 85-18-55-20-115 5-150 33 18 55 95 55 194z"/>
+    <path d="M375 540c11-65 40-108 60-117 18 34 12 77 2 105 29-42 61-59 84-53 1 38-37 81-62 103 37-18 71-17 89-5-12 35-59 54-91 59l-9 87h-28l9-85c-32-4-75-18-91-49 21-12 60-8 92 11-29-25-58-58-58-94 21-4 50 14 70 51-7-37-1-75 17-96 24 19 35 68 33 123z"/>
+  </g>
+  <g fill="#eac7a0" opacity=".52">
+    <circle cx="150" cy="265" r="4"/><circle cx="210" cy="300" r="3"/><circle cx="310" cy="240" r="5"/><circle cx="405" cy="320" r="3"/><circle cx="520" cy="205" r="4"/><circle cx="690" cy="255" r="3"/><circle cx="835" cy="190" r="4"/>
+  </g>
+</svg>
